@@ -1,0 +1,33 @@
+%h1== Message for #{@message.keyword}
+
+%table.properties
+  %tr
+    %td.label Keyword:
+    %td= @message.keyword
+  %tr
+    %td.label SMS Message:
+    %td= @message.sms_body
+  %tr
+    %td.label E-mail Subject:
+    %td.raw= @message.email_subject
+  %tr
+    %td.label E-mail Message:
+    %td.raw= raw @message.email_body
+
+%h2 Enquiries
+
+%table
+  %tr
+    %th Date
+    %th Phone
+    %th Email
+  - enquiries = @message.enquiries.paginate(:page => params[:page], :order => "created_at desc")
+  = render :partial => "enquiry_row", :collection => enquiries
+
+.pagination
+  = will_paginate enquiries
+
+.commands
+  = link_to "Back", :back
+  = link_to "Edit", edit_message_path(@message)
+  = link_to "Delete", @message, :method => :delete, :confirm => "Are you sure to delete this message?"

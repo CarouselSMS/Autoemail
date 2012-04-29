@@ -1,0 +1,9 @@
+- m = message_row
+%tr
+  %td= link_to m.keyword, m
+  %td= m.sms_body
+  %td= m.email_subject
+  %td= m.email_body
+  %td
+    = link_to "Edit",   edit_message_path(m)
+    = link_to "Delete", m, :method => :delete, :confirm => "Are you sure to delete this message?"

@@ -1,0 +1,3 @@
+# Used for emails (postman.rb)
+email_subject:  AutoEmail Content
+email_from:     support@recessmobile.com

@@ -1,0 +1,7 @@
+- form.inputs do
+  = form.input :keyword
+  = form.input :sms_body,   :label => "SMS Message", :as => :text, :required => false, :input_html => { :class => "sms-field" }
+  = form.input :email_subject, :label => "E-mail Subject", :required => false
+  = form.input :email_body, :label => "E-mail Message", :required => false
+
+= form.buttons

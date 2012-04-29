@@ -1,0 +1,7 @@
+%h1 New Message
+
+- semantic_form_for @message do |f|
+  = render :partial => "form", :object => f
+
+.commands
+  = link_to "Back", :back

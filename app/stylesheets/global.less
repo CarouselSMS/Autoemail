@@ -1,0 +1,160 @@
+@full-width: 980px;
+@photo-brief-width: 256px;
+@photo-brief-height: 256px + 84px;
+@photo-meta-margin: @photo-brief-width + 32px;
+
+body {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 90%;
+}
+
+#header {
+  background: #222;
+  .container {
+    background: url(/images/logo.png) 100% 3px no-repeat;
+    width: @full-width;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+
+#links {
+  font-size: 90%;
+  
+  a {
+    margin: 0 1em 0 0;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a:hover {
+    border-bottom: 2px solid #86b226;
+  }
+}
+
+#content {
+  width: @full-width;
+  margin: 1em auto 3em;
+  background: #fff;
+}
+
+h1 { margin-bottom: 0.5em; }
+h2 { clear: both; font-family: georgia, times; color: #222; margin: 2em 0 0.5em; border-bottom: 2px solid #ccc; }
+
+img { border: none; }
+
+.date {
+  font-size: 85%;
+  color: #888;
+}
+
+a.edit   { color: green; }
+a.delete { color: red; }
+
+.admin a { margin-right: 1em; }
+
+.section_commands {
+  margin: 0 0 1em 0;
+}
+.item_commands {
+  text-align: center;
+  a {
+    font-size: 85%;
+  }
+}
+
+.commands {
+  margin: 0 0 2em 0;
+  font-size: 85%;
+  a {
+    margin-right: 1em;
+  }
+}
+
+/* the overlayed element */ 
+.simple_overlay { 
+  /* must be initially hidden */ 
+  display:none; 
+   
+  /* place overlay on top of other elements */ 
+  z-index:10000; 
+   
+  /* styling */ 
+  background-color:#fafafa; 
+   
+  min-height:200px; 
+  border:1px solid #aaa; 
+   
+  /* CSS3 styling for latest browsers */ 
+  -moz-box-shadow:0 0 90px 5px #000; 
+  -webkit-box-shadow: 0 0 90px #000;     
+
+  /* close button positioned on upper right corner */ 
+  .close { 
+    background-image:url(/images/close.png); 
+    position:absolute; 
+    right:-15px; 
+    top:-15px; 
+    cursor:pointer; 
+    height:35px; 
+    width:35px; 
+  }
+  
+  .details {
+    padding: 5px;
+  }
+
+  h3 {
+    color: #222;
+    font-family: georgia,sans-serif;
+  }
+  
+  h4 { font-weight: normal; font-size: 85%; color: #666; }
+} 
+
+#content table {
+  width: 100%;
+  margin: 0 0 1.8em;
+
+  tr {
+    vertical-align: top;
+  }
+  
+  td {
+    padding: 6px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  caption {
+    padding: 6px;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  th {
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+    background: #ececec;
+  }
+  
+  td.label {
+    width: 25%;
+    font-weight: bold;
+  }
+}
+
+fieldset .sms-meta { padding-left: 25%; }
+.sms-field { height: 50px; }
+
+.pagination {
+  font-size: 12px;
+  text-align: center;
+}
+
+.raw {
+  strong { font-weight: bold; }
+  em { font-style: italic; }
+  p { margin: 0.5em 0; }
+}

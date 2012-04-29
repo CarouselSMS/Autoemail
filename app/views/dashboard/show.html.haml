@@ -1,0 +1,21 @@
+%h1 Dashboard
+
+%table.properties
+  %tr
+    %td.label Content messages:
+    %td= Message.count
+  %tr
+    %td.label Enquiries:
+    %td= Enquiry.count
+  %tr
+    %td.label Clients:
+    %td= Client.count
+
+
+%h2 Most popular content
+
+%table
+  %tr
+    %th Keyword
+    %th Enquiries
+  = render :partial => "most_enquired_row", :collection => @most_enquired

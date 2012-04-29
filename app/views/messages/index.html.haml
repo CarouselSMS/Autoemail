@@ -1,0 +1,20 @@
+%h1 Messages
+
+.commands
+  = link_to "New Message", new_message_path
+
+%table
+  %tr
+    %th Keyword
+    %th SMS
+    %th E-mail Subject
+    %th E-mail Body
+    %th
+  - if @messages.empty?
+    %tr
+      %td.no-items{ :colspan => 4 } There are no messages yet
+  - else
+    = render :partial => "message_row", :collection => @messages
+
+.pagination
+  = will_paginate @messages

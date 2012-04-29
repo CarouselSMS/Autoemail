@@ -1,0 +1,9 @@
+%h1 Clients
+
+%table
+  %tr
+    %th Phone
+    %th E-mail
+  = render :partial => "client_row", :collection => @clients
+
+= will_paginate @clients

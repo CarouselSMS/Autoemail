@@ -1,0 +1,5 @@
+- e = enquiry_row
+%tr
+  %td= e.created_at.to_s(:medium)
+  %td= e.client.phone
+  %td= e.client.email
