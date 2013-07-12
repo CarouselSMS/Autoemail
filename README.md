@@ -4,7 +4,7 @@ Autoemail
 ### Admin UI for SMS to email processor
 #### User texts in their email address, this app parses it and sends a reply
 
-Use this app to setup a keyword on an SMS API (e.g., [bit.ly/sms-api](http://bit.ly/sms-api)). Then, you can text in KEYWORD email@domain.com and the app will parse it, send an SMS reply to that number and follow up with a pre-written email.
+Use this app to setup a keyword on an SMS API (like ours, at [CarouselSMS](http://carouselsms.com)). Then, you can text in `KEYWORD email@domain.com` and the app will parse it, send an SMS reply to that number and follow up with a pre-written email.
 
 
 #### Notes:
@@ -23,3 +23,9 @@ Use this app to setup a keyword on an SMS API (e.g., [bit.ly/sms-api](http://bit
 
 ![example email](http://dl.dropbox.com/u/225019/rm-app-screenshots/Autoemail/example-email.png)
 
+License
+=======
+
+AntiTow is Copyright © 2013 [Recess Mobile](http://recess.im/).
+
+It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
