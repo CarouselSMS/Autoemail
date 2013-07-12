@@ -26,6 +26,6 @@ Use this app to setup a keyword on an SMS API (like ours, at [CarouselSMS](http:
 License
 =======
 
-AutoEmail is Copyright © 2013 [Recess Mobile](http://recess.im/).
+Autoemail is Copyright © 2013 [Recess Mobile](http://recess.im/).
 
 It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
